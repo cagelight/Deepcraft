@@ -28,6 +28,7 @@ public class SItems {
 	public static final Item artifactEndurai = (new ItemEnduraiArtifact(3900, EnumRarity.rare, false)).setIconCoord(8, 1).setItemName("artifactEndurai").setCreativeTab(CreativeTabs.tabMisc);
 	public static final Item artifactXirk = (new ItemXirkArtifact(3901, EnumRarity.rare, false)).setIconCoord(9, 1).setItemName("artifactXirk").setCreativeTab(CreativeTabs.tabMisc);
 	public static final Item artifactDeepNether = (new ItemDeepNetherArtifact(3902, EnumRarity.rare, false)).setIconCoord(8, 2).setItemName("artifactDeepNether").setCreativeTab(CreativeTabs.tabMisc);
+	public static final Item artifactVala = (new ItemValaArtifact(3903, EnumRarity.epic, true)).setIconCoord(9, 2).setItemName("artifactVala").setCreativeTab(CreativeTabs.tabMisc);
 	
 	public static void SetupLanguage () {
 		
@@ -49,6 +50,7 @@ public class SItems {
 		LanguageRegistry.addName(artifactEndurai, "Endurai Artifact");
 		LanguageRegistry.addName(artifactXirk, "Xirk Artifact");
 		LanguageRegistry.addName(artifactDeepNether, "Deep Nether Artifact");
+		LanguageRegistry.addName(artifactVala, "Vala Artifact");
 	}
 	
 	public static void SetupRecipes () {

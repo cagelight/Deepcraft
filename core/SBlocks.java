@@ -80,6 +80,7 @@ public class SBlocks {
 	public final static BlockArtifact artifactEnduraiBlock = (BlockArtifact) new BlockArtifact(2450, 24, artifact, SItems.artifactEndurai.itemID).setBlockName("artifactEnduraiBlock");
 	public final static BlockArtifact artifactXirkBlock = (BlockArtifact) new BlockArtifact(2451, 25, artifact, SItems.artifactXirk.itemID).setBlockName("artifactXirkBlock");
 	public final static BlockArtifact artifactDeepNetherBlock = (BlockArtifact) new BlockArtifact(2452, 40, artifact, SItems.artifactDeepNether.itemID).setBlockName("artifactDeepNetherBlock");
+	public final static BlockArtifact artifactValaBlock = (BlockArtifact) new BlockArtifact(2453, 41, artifact, SItems.artifactVala.itemID).setBlockName("artifactValaBlock");
 	
 	public static void SetupLanguage () {
 		
@@ -135,6 +136,7 @@ public class SBlocks {
 		LanguageRegistry.addName(artifactEnduraiBlock, "Endurai Artifact Block");
 		LanguageRegistry.addName(artifactXirkBlock, "Xirk Artifact Block");
 		LanguageRegistry.addName(artifactDeepNetherBlock, "Deep Nether Artifact Block");
+		LanguageRegistry.addName(artifactValaBlock, "Vala Artifact Block");
 	}
 	
 	public static void SetupLevels() {
@@ -222,6 +224,7 @@ public class SBlocks {
 		GameRegistry.registerBlock(artifactEnduraiBlock, "artifactEnduraiBlock");
 		GameRegistry.registerBlock(artifactXirkBlock, "artifactXirkBlock");
 		GameRegistry.registerBlock(artifactDeepNetherBlock, "artifactDeepNetherBlock");
+		GameRegistry.registerBlock(artifactValaBlock, "artifactValaBlock");
 	}
 	
 	public static void SetupRecipes() {
