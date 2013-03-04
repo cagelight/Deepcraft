@@ -50,6 +50,7 @@ public class SBlocks {
 	public final static Block oreGodumNether = new BlockOreSensMod(1696, 82).setBlockName("oreGodumNether").setHardness(50.0F).setResistance(100.0F);
 	
 	public final static Block oreXirciumXirk = new BlockOreXirciumSandstone(1290).setBlockName("oreXirciumXirk").setHardness(5.0F).setResistance(7.0F);
+	public final static Block oreNetheriteDeepNether = new BlockCrystalOreSensMod(1370, 98, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetheriteDeepNether").setHardness(7.0F).setResistance(10.0F);
 
 	public final static Block blockEndurum = new BlockSensMod(1197, 1, Material.iron).setBlockName("blockEndurum").setHardness(8.0F).setResistance(12.0F);
 	public final static Block blockXircium = new BlockSensMod(1297, 17, Material.iron).setBlockName("blockXircium").setHardness(10.0F).setResistance(14.0F).setLightValue(0.25F);
@@ -98,6 +99,7 @@ public class SBlocks {
 		LanguageRegistry.addName(oreGodum, "Godum Ore");
 		
 		LanguageRegistry.addName(oreXirciumXirk, "Sandstone Xircium Ore");
+		LanguageRegistry.addName(oreNetheriteDeepNether, "Netherite Ore");
 
 		LanguageRegistry.addName(oreEndurumNether, "Netherrack Endurum Ore");
 		LanguageRegistry.addName(oreXirciumNether, "Netherrack Xircium Ore");
@@ -154,6 +156,7 @@ public class SBlocks {
 		MinecraftForge.setBlockHarvestLevel(oreGodum, "pickaxe", 7);
 		
 		MinecraftForge.setBlockHarvestLevel(oreXirciumXirk, "pickaxe", 3);
+		MinecraftForge.setBlockHarvestLevel(oreNetheriteDeepNether, "pickaxe", 4);
 
 		MinecraftForge.setBlockHarvestLevel(oreEndurumNether, "pickaxe", 3);
 		MinecraftForge.setBlockHarvestLevel(oreXirciumNether, "pickaxe", 3);
@@ -182,6 +185,7 @@ public class SBlocks {
 		GameRegistry.registerBlock(oreGodum, "oreGodum");
 		
 		GameRegistry.registerBlock(oreXirciumXirk, "oreXirciumXirk");
+		GameRegistry.registerBlock(oreNetheriteDeepNether, "oreNetheriteDeepNether");
 
 		GameRegistry.registerBlock(oreEndurumNether, "oreEndurumNether");
 		GameRegistry.registerBlock(oreXirciumNether, "oreXirciumNether");
@@ -243,6 +247,7 @@ public class SBlocks {
 		Core.addSmeltingRecipes(oreNetherite.blockID, crystalNetheriteStack, 3.0F);
 
 		Core.addSmeltingRecipes(oreXirciumXirk.blockID, crystalXirciumStack, 7.5F);
+		Core.addSmeltingRecipes(oreNetheriteDeepNether.blockID, crystalNetheriteStack, 3.0F);
 		
 		Core.addSmeltingRecipes(oreEndurumNether.blockID, ingotEndurumStack, 1.5F);
 		Core.addSmeltingRecipes(oreXirciumNether.blockID, crystalXirciumStack, 2.5F);

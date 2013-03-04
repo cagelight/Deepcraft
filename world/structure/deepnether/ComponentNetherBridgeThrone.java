@@ -64,13 +64,13 @@ public class ComponentNetherBridgeThrone extends ComponentNetherBridgePiece
             if (par3StructureBoundingBox.isVecInside(var5, var4, var6))
             {
                 this.hasSpawner = true;
-                par1World.setBlockWithNotify(var5, var4, var6, SBlocks.blockNetherite.blockID);
-                TileEntityMobSpawner var7 = (TileEntityMobSpawner)par1World.getBlockTileEntity(var5, var4, var6);
+                par1World.setBlockWithNotify(var5, var4, var6, SBlocks.artifactDeepNetherBlock.blockID);
+                /*TileEntityMobSpawner var7 = (TileEntityMobSpawner)par1World.getBlockTileEntity(var5, var4, var6);
 
                 if (var7 != null)
                 {
                     var7.setMobID("Blaze");
-                }
+                }*/
             }
         }
 

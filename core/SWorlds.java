@@ -68,6 +68,8 @@ public class SWorlds {
 		
 		WGSM.SetupXirkOre(SBlocks.oreXirciumXirk.blockID, 3, 64, 128, 56);
 		
+		WGSM.SetupDeepNetherOre(SBlocks.oreNetheriteDeepNether.blockID, 32, 4, 32, 127);
+		
 		GameRegistry.registerWorldGenerator(WGSM);
 	}
 

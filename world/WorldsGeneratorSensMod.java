@@ -11,6 +11,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 import deepcraft.core.Core;
+import deepcraft.core.SBlocks;
 
 public class WorldsGeneratorSensMod implements IWorldGenerator{
 	
@@ -18,6 +19,7 @@ public class WorldsGeneratorSensMod implements IWorldGenerator{
 	private List<int[]> HellGenerationSets = new ArrayList();
 	private List<int[]> EnduraiGenerationSets = new ArrayList();
 	private List<int[]> XirkGenerationSets = new ArrayList();
+	private List<int[]> DeepNetherGenerationSets = new ArrayList();
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
@@ -29,6 +31,8 @@ public class WorldsGeneratorSensMod implements IWorldGenerator{
 			generateEndurai(random,chunkX*16,chunkZ*16,world);
 		} else if (biomeProvider.biomeName == "Xirk") {
 			generateXirk(random,chunkX*16,chunkZ*16,world);
+		} else if (biomeProvider.biomeName == "Deep Nether") {
+			generateDeepNether(random,chunkX*16,chunkZ*16,world);
 		} else {
 			generateSurface(random,chunkX*16,chunkZ*16,world);
 		}
@@ -45,6 +49,9 @@ public class WorldsGeneratorSensMod implements IWorldGenerator{
 	}
 	public void SetupXirkOre(int blockID, int perChunk, int Min, int Max, int HeightMax){
 		XirkGenerationSets.add(new int[]{blockID, perChunk, Min, Max, HeightMax});
+	}
+	public void SetupDeepNetherOre(int blockID, int perChunk, int Min, int Max, int HeightMax){
+		DeepNetherGenerationSets.add(new int[]{blockID, perChunk, Min, Max, HeightMax});
 	}
 
 	public void generateSurface(Random random, int x, int z, World w){
@@ -87,6 +94,17 @@ public class WorldsGeneratorSensMod implements IWorldGenerator{
 				int posY = random.nextInt(XirkGenerationSets.get(i)[4]); //Y coordinate less than 40 to gen at
 				int posZ = z + random.nextInt(16); //Z coordinate to gen at
 				new WorldGenMinableSensMod(XirkGenerationSets.get(i)[0],random.nextInt(XirkGenerationSets.get(i)[3]-XirkGenerationSets.get(i)[2]+1) + XirkGenerationSets.get(i)[2], new int[] {Block.sandStone.blockID, Block.stone.blockID}).generate(w, random, posX, posY, posZ); //The gen call
+			}
+		}
+	}
+	
+	public void generateDeepNether(Random random, int x, int z, World w){
+		for(int i=0;i<DeepNetherGenerationSets.size();i++){
+			for(int ii=0;ii<DeepNetherGenerationSets.get(i)[1];ii++){ //This makes it gen multiple times in each chunk
+				int posX = x + random.nextInt(16); //X coordinate to gen at
+				int posY = random.nextInt(DeepNetherGenerationSets.get(i)[4]); //Y coordinate less than 40 to gen at
+				int posZ = z + random.nextInt(16); //Z coordinate to gen at
+				new WorldGenMinableSensMod(DeepNetherGenerationSets.get(i)[0],random.nextInt(DeepNetherGenerationSets.get(i)[3]-DeepNetherGenerationSets.get(i)[2]+1) + DeepNetherGenerationSets.get(i)[2], new int[] {SBlocks.netherrackDeep.blockID, Block.netherrack.blockID}).generate(w, random, posX, posY, posZ); //The gen call
 			}
 		}
 	}
