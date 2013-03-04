@@ -1,8 +1,8 @@
-package sensory.block;
+package deepcraft.block;
 
 import java.util.Random;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

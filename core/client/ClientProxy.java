@@ -1,7 +1,7 @@
-package sensory.core.client;
+package deepcraft.core.client;
 
+import deepcraft.core.CommonProxy;
 import net.minecraftforge.client.MinecraftForgeClient;
-import sensory.core.CommonProxy;
 
 public class ClientProxy extends CommonProxy {
     

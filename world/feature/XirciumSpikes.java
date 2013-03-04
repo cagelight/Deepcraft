@@ -1,9 +1,9 @@
-package sensory.world.feature;
+package deepcraft.world.feature;
 
 import java.math.MathContext;
 import java.util.Random;
 
-import sensory.core.SBlocks;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;

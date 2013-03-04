@@ -1,4 +1,4 @@
-package sensory.infurnace;
+package deepcraft.infurnace;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.entity.item.EntityXPOrb;

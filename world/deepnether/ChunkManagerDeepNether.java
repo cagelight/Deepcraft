@@ -1,4 +1,4 @@
-package sensory.world.deepnether;
+package deepcraft.world.deepnether;
 
 import java.util.Arrays;
 import java.util.List;

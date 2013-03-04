@@ -1,12 +1,7 @@
-package sensory.block;
+package deepcraft.block;
 
 import java.util.Random;
 
-import sensory.core.CommonProxy;
-import sensory.core.Core;
-import sensory.core.SBlocks;
-import sensory.fx.EntityBlueFlameFX;
-import sensory.infurnace.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.material.Material;
@@ -24,6 +19,11 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.Core;
+import deepcraft.core.SBlocks;
+import deepcraft.fx.EntityBlueFlameFX;
+import deepcraft.infurnace.*;
 
 public class BlockInfurnace extends BlockContainer{
 

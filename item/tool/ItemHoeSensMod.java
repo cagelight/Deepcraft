@@ -1,6 +1,6 @@
-package sensory.item.tool;
+package deepcraft.item.tool;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemHoe;

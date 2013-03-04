@@ -1,12 +1,12 @@
-package sensory.fx;
+package deepcraft.fx;
 
 import org.lwjgl.opengl.GL11;
 
-import sensory.core.CommonProxy;
-import sensory.core.SBlocks;
 import cpw.mods.fml.client.FMLTextureFX;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderEngine;
 import net.minecraft.util.MathHelper;

@@ -1,7 +1,7 @@
-package sensory.item;
+package deepcraft.item;
 
-import sensory.core.CommonProxy;
-import sensory.core.SArmors;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.SArmors;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumArmorMaterial;

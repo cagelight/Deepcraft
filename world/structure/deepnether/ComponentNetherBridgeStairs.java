@@ -1,8 +1,9 @@
-package sensory.world.structure.deepnether;
+package deepcraft.world.structure.deepnether;
 
-import sensory.core.SBlocks;
 import java.util.List;
 import java.util.Random;
+
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 

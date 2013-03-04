@@ -1,4 +1,4 @@
-package sensory.world.xirk;
+package deepcraft.world.xirk;
 
 import java.util.Random;
 

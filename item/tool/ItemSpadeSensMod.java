@@ -1,10 +1,10 @@
-package sensory.item.tool;
+package deepcraft.item.tool;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import sensory.core.CommonProxy;
-import sensory.core.Core;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.Core;
 import net.minecraft.block.Block;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;

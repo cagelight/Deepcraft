@@ -1,4 +1,4 @@
-package sensory.infurnace;
+package deepcraft.infurnace;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;

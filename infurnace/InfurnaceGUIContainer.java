@@ -1,4 +1,4 @@
-package sensory.infurnace;
+package deepcraft.infurnace;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -9,7 +9,7 @@ import net.minecraft.util.StatCollector;
 
 import org.lwjgl.opengl.GL11;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 
 @SideOnly(Side.CLIENT)
 public class InfurnaceGUIContainer extends GuiContainer

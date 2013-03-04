@@ -1,9 +1,9 @@
-package sensory.world.xirk;
+package deepcraft.world.xirk;
 
 import java.util.List;
 import java.util.Random;
 
-import sensory.world.feature.*;
+import deepcraft.world.feature.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
 import net.minecraft.entity.EnumCreatureType;

@@ -1,4 +1,4 @@
-package sensory.world.feature;
+package deepcraft.world.feature;
 
 import java.util.Random;
 

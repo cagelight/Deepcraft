@@ -1,10 +1,10 @@
-package sensory.world.structure.deepnether;
+package deepcraft.world.structure.deepnether;
 
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-import sensory.core.SBlocks;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.item.ItemDoor;

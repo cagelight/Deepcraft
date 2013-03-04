@@ -1,16 +1,16 @@
-package sensory.world;
+package deepcraft.world;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import sensory.core.Core;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
+import deepcraft.core.Core;
 
 public class WorldsGeneratorSensMod implements IWorldGenerator{
 	

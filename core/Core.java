@@ -1,4 +1,4 @@
-package sensory.core;
+package deepcraft.core;
 
 import cpw.mods.fml.client.TextureFXManager;
 import cpw.mods.fml.common.Mod;
@@ -17,6 +17,12 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import deepcraft.block.*;
+import deepcraft.fx.TexturePortalFXSensMod;
+import deepcraft.infurnace.*;
+import deepcraft.item.*;
+import deepcraft.item.tool.*;
+import deepcraft.world.*;
 import net.minecraftforge.client.EnumHelperClient;
 import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,14 +39,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
-import sensory.block.*;
-import sensory.fx.TexturePortalFXSensMod;
-import sensory.item.*;
-import sensory.item.tool.*;
-import sensory.infurnace.*;
-import sensory.world.*;
 
-@Mod(modid="SensMod", name="Sensory's Mod", version="0.0.2")
+@Mod(modid="deepcraft", name="Deepcraft", version="0.5.0")
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class Core {
 
@@ -65,7 +65,7 @@ public class Core {
 	@Instance("SensMod")
 	public static Core instance;
 
-	@SidedProxy(clientSide="sensory.core.client.ClientProxy", serverSide="sensory.core.CommonProxy")
+	@SidedProxy(clientSide="deepcraft.core.client.ClientProxy", serverSide="deepcraft.core.CommonProxy")
 	public static CommonProxy proxy;
 
 	@PreInit

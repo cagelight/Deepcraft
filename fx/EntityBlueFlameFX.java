@@ -1,6 +1,6 @@
-package sensory.fx;
+package deepcraft.fx;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 import net.minecraft.client.particle.EntityFlameFX;
 import net.minecraft.world.World;
 

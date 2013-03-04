@@ -1,12 +1,12 @@
-package sensory.fx;
+package deepcraft.fx;
 
 import java.util.Random;
 
 import org.lwjgl.opengl.GL11;
 
 import cpw.mods.fml.client.FMLTextureFX;
-import sensory.core.CommonProxy;
-import sensory.core.SBlocks;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderEngine;
 import net.minecraft.client.renderer.texturefx.TexturePortalFX;

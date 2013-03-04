@@ -1,10 +1,10 @@
-package sensory.block;
+package deepcraft.block;
 
 import java.util.Random;
 
-import sensory.core.CommonProxy;
-import sensory.core.Core;
-import sensory.core.SBlocks;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.Core;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockRedstoneOre;
 import net.minecraft.item.ItemStack;

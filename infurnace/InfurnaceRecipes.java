@@ -1,13 +1,13 @@
-package sensory.infurnace;
+package deepcraft.infurnace;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import sensory.core.Core;
-import sensory.core.SBlocks;
-import sensory.core.SItems;
+import deepcraft.core.Core;
+import deepcraft.core.SBlocks;
+import deepcraft.core.SItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

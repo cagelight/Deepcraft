@@ -1,4 +1,4 @@
-package sensory.infurnace;
+package deepcraft.infurnace;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

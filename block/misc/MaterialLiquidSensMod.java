@@ -1,4 +1,4 @@
-package sensory.block.misc;
+package deepcraft.block.misc;
 
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;

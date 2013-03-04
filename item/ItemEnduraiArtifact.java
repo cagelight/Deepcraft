@@ -1,6 +1,6 @@
-package sensory.item;
+package deepcraft.item;
 
-import sensory.core.SBlocks;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;

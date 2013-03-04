@@ -1,3 +1,3 @@
 Deepcraft
 =========
-<placeholder>
+forge/mcp/src/minecraft/deepcraft/...

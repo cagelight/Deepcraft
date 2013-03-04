@@ -1,17 +1,17 @@
-package sensory.block;
+package deepcraft.block;
 
 import java.util.Random;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import sensory.core.CommonProxy;
-import sensory.core.Core;
-import sensory.core.SBlocks;
-import sensory.core.SWorlds;
-import sensory.fx.EntityPortalEnduraiFX;
-import sensory.fx.EntityPortalDeepNetherFX;
-import sensory.world.TeleporterSensMod;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.Core;
+import deepcraft.core.SBlocks;
+import deepcraft.core.SWorlds;
+import deepcraft.fx.EntityPortalDeepNetherFX;
+import deepcraft.fx.EntityPortalEnduraiFX;
+import deepcraft.world.TeleporterSensMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
 import net.minecraft.client.particle.EntityFX;

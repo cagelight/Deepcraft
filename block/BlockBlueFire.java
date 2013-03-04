@@ -1,12 +1,12 @@
-package sensory.block;
+package deepcraft.block;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-import sensory.core.CommonProxy;
-import sensory.core.SBlocks;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.AxisAlignedBB;

@@ -1,7 +1,13 @@
-package sensory.core;
+package deepcraft.core;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import deepcraft.item.tool.ItemAxeSensMod;
+import deepcraft.item.tool.ItemHoeSensMod;
+import deepcraft.item.tool.ItemPickaxeSensMod;
+import deepcraft.item.tool.ItemSpadeSensMod;
+import deepcraft.item.tool.ItemSpaxelSensMod;
+import deepcraft.item.tool.ItemSwordSensMod;
 import net.minecraft.block.Block;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;
@@ -9,12 +15,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
-import sensory.item.tool.ItemAxeSensMod;
-import sensory.item.tool.ItemHoeSensMod;
-import sensory.item.tool.ItemPickaxeSensMod;
-import sensory.item.tool.ItemSpadeSensMod;
-import sensory.item.tool.ItemSpaxelSensMod;
-import sensory.item.tool.ItemSwordSensMod;
 
 public class STools {
 	

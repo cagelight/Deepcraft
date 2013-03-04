@@ -1,8 +1,12 @@
-package sensory.infurnace;
+package deepcraft.infurnace;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import deepcraft.block.BlockInfurnace;
+import deepcraft.core.Core;
+import deepcraft.core.SBlocks;
+import deepcraft.core.SItems;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
@@ -18,10 +22,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.ForgeDirection;
 import net.minecraftforge.common.ISidedInventory;
 import net.minecraft.block.Block;
-import sensory.block.BlockInfurnace;
-import sensory.core.Core;
-import sensory.core.SBlocks;
-import sensory.core.SItems;
 
 public class InfurnaceTileEntity extends TileEntity implements IInventory, ISidedInventory {
 	/**

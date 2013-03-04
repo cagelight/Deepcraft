@@ -1,4 +1,4 @@
-package sensory.world.endurai;
+package deepcraft.world.endurai;
 
 import java.util.Arrays;
 import java.util.List;

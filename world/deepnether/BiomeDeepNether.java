@@ -1,4 +1,4 @@
-package sensory.world.deepnether;
+package deepcraft.world.deepnether;
 
 import net.minecraft.entity.monster.EntityBlaze;
 import net.minecraft.entity.monster.EntityGhast;

@@ -1,8 +1,8 @@
-package sensory.world.deepnether;
+package deepcraft.world.deepnether;
 
-import sensory.core.SWorlds;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import deepcraft.core.SWorlds;
 import net.minecraft.util.Vec3;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.BiomeGenBase;

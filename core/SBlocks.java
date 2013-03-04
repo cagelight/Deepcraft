@@ -1,8 +1,12 @@
-package sensory.core;
+package deepcraft.core;
 
 import cpw.mods.fml.client.TextureFXManager;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import deepcraft.block.*;
+import deepcraft.block.misc.MaterialLiquidSensMod;
+import deepcraft.core.client.*;
+import deepcraft.fx.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.BlockFire;
@@ -17,10 +21,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import sensory.block.*;
-import sensory.block.misc.MaterialLiquidSensMod;
-import sensory.core.client.*;
-import sensory.fx.*;
 
 public class SBlocks {
 		
@@ -65,7 +65,7 @@ public class SBlocks {
     public static final Block stairsNetherBrickDeep = (new BlockStairsSensMod(1384, netherBrickDeep, 0)).setBlockName("stairsNetherBrickDeep").setRequiresSelfNotify();
     public static final Block lavaBlueMoving = (new BlockBlueLavaFlowing(1385, Material.lava)).setHardness(0.0F).setLightValue(1.0F).setLightOpacity(255).setBlockName("lavaBlueMoving").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
     public static final Block lavaBlueStill = (new BlockBlueLavaStationary(1386, Material.lava)).setHardness(100.0F).setLightValue(1.0F).setLightOpacity(255).setBlockName("lavaBlueStill").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
-    public static final BlockBlueFire fireBlue = (BlockBlueFire)(new BlockBlueFire(51, 31)).setHardness(0.0F).setLightValue(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("fireBlue");
+    public static final BlockBlueFire fireBlue = (BlockBlueFire)(new BlockBlueFire(1387, 31)).setHardness(0.0F).setLightValue(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("fireBlue");
 	
 	public final static Block blockInfurnace = new BlockInfurnace(505, false).setBlockName("blockInfurnace").setCreativeTab(CreativeTabs.tabDecorations);
 	public final static Block blockInfurnaceActive = new BlockInfurnace(506, true).setBlockName("blockInfurnaceActive");

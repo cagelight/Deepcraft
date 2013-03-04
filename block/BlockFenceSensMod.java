@@ -1,6 +1,6 @@
-package sensory.block;
+package deepcraft.block;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;

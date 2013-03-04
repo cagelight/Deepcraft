@@ -1,9 +1,9 @@
-package sensory.world.endurai;
+package deepcraft.world.endurai;
 
 import java.util.List;
 import java.util.Random;
 
-import sensory.world.feature.EndurumCubes;
+import deepcraft.world.feature.EndurumCubes;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
 import net.minecraft.entity.EnumCreatureType;

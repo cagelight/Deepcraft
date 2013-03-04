@@ -1,4 +1,4 @@
-package sensory.world.xirk;
+package deepcraft.world.xirk;
 
 import static net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.BIG_SHROOM;
 import static net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.CACTUS;

@@ -1,4 +1,4 @@
-package sensory.core;
+package deepcraft.core;
 
 import java.util.EnumSet;
 

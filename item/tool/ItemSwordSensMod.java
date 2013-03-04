@@ -1,9 +1,9 @@
-package sensory.item.tool;
+package deepcraft.item.tool;
 
 import cpw.mods.fml.common.FMLCommonHandler;
-import sensory.core.CommonProxy;
-import sensory.core.Core;
-import sensory.world.xirk.WorldProviderXirk;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.Core;
+import deepcraft.world.xirk.WorldProviderXirk;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityLiving;

@@ -1,12 +1,12 @@
-package sensory.core;
+package deepcraft.core;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import deepcraft.item.*;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import sensory.item.*;
 
 public class SItems {
 	

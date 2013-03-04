@@ -1,13 +1,13 @@
-package sensory.core;
+package deepcraft.core;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import deepcraft.world.*;
+import deepcraft.world.deepnether.*;
+import deepcraft.world.endurai.*;
+import deepcraft.world.xirk.*;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.DimensionManager;
-import sensory.world.*;
-import sensory.world.endurai.*;
-import sensory.world.xirk.*;
-import sensory.world.deepnether.*;
 
 public class SWorlds {
 	

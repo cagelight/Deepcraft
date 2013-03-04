@@ -1,6 +1,6 @@
-package sensory.block;
+package deepcraft.block;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 

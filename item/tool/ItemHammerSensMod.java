@@ -1,4 +1,4 @@
-package sensory.item.tool;
+package deepcraft.item.tool;
 
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.EnumToolMaterial;

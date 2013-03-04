@@ -1,8 +1,8 @@
-package sensory.item.tool;
+package deepcraft.item.tool;
 
-import sensory.core.CommonProxy;
-import sensory.core.Core;
-import sensory.core.STools;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.Core;
+import deepcraft.core.STools;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;

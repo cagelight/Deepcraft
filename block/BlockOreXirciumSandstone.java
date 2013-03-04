@@ -1,9 +1,9 @@
-package sensory.block;
+package deepcraft.block;
 
 import java.util.Random;
 
-import sensory.core.CommonProxy;
-import sensory.core.SItems;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.SItems;
 import net.minecraft.block.BlockSandStone;
 
 public class BlockOreXirciumSandstone extends BlockSandStone{

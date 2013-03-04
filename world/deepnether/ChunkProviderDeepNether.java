@@ -1,10 +1,10 @@
-package sensory.world.deepnether;
+package deepcraft.world.deepnether;
 
 import java.util.List;
 import java.util.Random;
 
-import sensory.world.feature.DeepNetherReplacer;
-import sensory.world.structure.deepnether.*;
+import deepcraft.world.feature.DeepNetherReplacer;
+import deepcraft.world.structure.deepnether.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
 import net.minecraft.entity.EnumCreatureType;

@@ -1,6 +1,6 @@
-package sensory.item;
+package deepcraft.item;
 
-import sensory.core.CommonProxy;
+import deepcraft.core.CommonProxy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.EnumRarity;

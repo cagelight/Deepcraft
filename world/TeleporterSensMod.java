@@ -1,11 +1,11 @@
-package sensory.world;
+package deepcraft.world;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-import sensory.core.SBlocks;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.Direction;

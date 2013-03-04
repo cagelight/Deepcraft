@@ -1,8 +1,8 @@
-package sensory.core;
+package deepcraft.core;
 
-import sensory.item.ItemArmorSensMod;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
+import deepcraft.item.ItemArmorSensMod;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;

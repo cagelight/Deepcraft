@@ -1,7 +1,7 @@
-package sensory.block;
+package deepcraft.block;
 
-import sensory.core.CommonProxy;
-import sensory.core.SBlocks;
+import deepcraft.core.CommonProxy;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFlowing;
 import net.minecraft.block.material.Material;
