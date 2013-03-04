@@ -39,7 +39,6 @@ public class BlockBlueFire extends Block
         super(par1, par2, Material.fire);
         this.setTickRandomly(true);
         this.disableStats();
-        this.setCreativeTab(CreativeTabs.tabBlock);
     }
 
     /**
