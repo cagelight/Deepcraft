@@ -135,7 +135,7 @@ public class BlockBlueFire extends Block
         if (par1World.getGameRules().getGameRuleBooleanValue("doFireTick"))
         {
             Block base = Block.blocksList[par1World.getBlockId(par2, par3 - 1, par4)];
-            boolean var6 = (base != null && base.isFireSource(par1World, par2, par3 - 1, par4, par1World.getBlockMetadata(par2, par3 - 1, par4), UP));
+            boolean var6 = (base != null && (base.isFireSource(par1World, par2, par3 - 1, par4, par1World.getBlockMetadata(par2, par3 - 1, par4), UP) || par1World.getBlockId(par2, par3 - 1, par4) == SBlocks.netherrackDeep.blockID));
 
             if (!this.canPlaceBlockAt(par1World, par2, par3, par4))
             {
