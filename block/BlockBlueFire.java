@@ -512,6 +512,6 @@ public class BlockBlueFire extends Block
     
 	@Override
 	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity ent) {
-		ent.setFire(10);
+		ent.setFire(5000);
 	}
 }
