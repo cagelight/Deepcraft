@@ -16,6 +16,6 @@ public class BiomeDeepNether extends BiomeGenBase
         this.spawnableCreatureList.clear();
         this.spawnableWaterCreatureList.clear();
         this.field_82914_M.clear();
-        this.spawnableMonsterList.add(new SpawnListEntry(EntityMagmaCube.class, 200, 16, 32));
+        //this.spawnableMonsterList.add(new SpawnListEntry(EntityMagmaCube.class, 200, 16, 32));
     }
 }

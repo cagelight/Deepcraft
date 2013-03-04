@@ -3,6 +3,7 @@ package deepcraft.world.deepnether;
 import java.util.List;
 import java.util.Random;
 
+import deepcraft.core.SBlocks;
 import deepcraft.world.feature.DeepNetherReplacer;
 import deepcraft.world.structure.deepnether.*;
 import net.minecraft.block.Block;

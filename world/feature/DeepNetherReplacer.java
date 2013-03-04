@@ -19,6 +19,10 @@ public class DeepNetherReplacer extends WorldGenerator
 		    			world.setBlock(x+bX, y, z+bZ, SBlocks.netherrackDeep.blockID);
 		    		} else if (blockID == Block.gravel.blockID || blockID == Block.slowSand.blockID) {
 		    			world.setBlock(x+bX, y, z+bZ, SBlocks.slowSandDeep.blockID);
+		    		} else if (blockID == Block.lavaStill.blockID) {
+		    			world.setBlock(x+bX, y, z+bZ, SBlocks.lavaBlueStill.blockID);
+		    		} else if (blockID == Block.lavaMoving.blockID) {
+		    			world.setBlock(x+bX, y, z+bZ, SBlocks.lavaBlueMoving.blockID);
 		    		}
     			}
     		}

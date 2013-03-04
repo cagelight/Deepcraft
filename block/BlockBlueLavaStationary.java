@@ -3,6 +3,7 @@ package deepcraft.block;
 import java.util.Random;
 
 import deepcraft.core.CommonProxy;
+import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockStationary;
 import net.minecraft.block.material.Material;
@@ -41,7 +42,7 @@ public class BlockBlueLavaStationary extends BlockStationary{
             {
                 if (par1World.getBlockMaterial(par2 - 1, par3, par4).getCanBurn() || par1World.getBlockMaterial(par2 + 1, par3, par4).getCanBurn() || par1World.getBlockMaterial(par2, par3, par4 - 1).getCanBurn() || par1World.getBlockMaterial(par2, par3, par4 + 1).getCanBurn() || par1World.getBlockMaterial(par2, par3 - 1, par4).getCanBurn() || par1World.getBlockMaterial(par2, par3 + 1, par4).getCanBurn())
                 {
-                    par1World.setBlockWithNotify(par2, par3, par4, Block.fire.blockID);
+                    par1World.setBlockWithNotify(par2, par3, par4, SBlocks.fireBlue.blockID);
                     return;
                 }
             }
@@ -63,7 +64,7 @@ public class BlockBlueLavaStationary extends BlockStationary{
 
                 if (par1World.isAirBlock(par2, par3 + 1, par4) && par1World.getBlockMaterial(par2 + 1, par3, par4).getCanBurn())
                 {
-                    par1World.setBlockWithNotify(par2, par3 + 1, par4, Block.fire.blockID);
+                    par1World.setBlockWithNotify(par2, par3 + 1, par4, SBlocks.fireBlue.blockID);
                 }
             }
         }

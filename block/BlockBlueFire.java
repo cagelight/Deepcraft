@@ -9,6 +9,8 @@ import deepcraft.core.CommonProxy;
 import deepcraft.core.SBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -37,6 +39,7 @@ public class BlockBlueFire extends Block
         super(par1, par2, Material.fire);
         this.setTickRandomly(true);
         this.disableStats();
+        this.setCreativeTab(CreativeTabs.tabBlock);
     }
 
     /**
@@ -399,7 +402,7 @@ public class BlockBlueFire extends Block
 
         if (!par1World.doesBlockHaveSolidTopSurface(par2, par3 - 1, par4) && !SBlocks.fireBlue.canBlockCatchFire(par1World, par2, par3 - 1, par4, UP))
         {
-            if (Block.fire.canBlockCatchFire(par1World, par2 - 1, par3, par4, EAST))
+            if (SBlocks.fireBlue.canBlockCatchFire(par1World, par2 - 1, par3, par4, EAST))
             {
                 for (var6 = 0; var6 < 2; ++var6)
                 {
@@ -410,7 +413,7 @@ public class BlockBlueFire extends Block
                 }
             }
 
-            if (Block.fire.canBlockCatchFire(par1World, par2 + 1, par3, par4, WEST))
+            if (SBlocks.fireBlue.canBlockCatchFire(par1World, par2 + 1, par3, par4, WEST))
             {
                 for (var6 = 0; var6 < 2; ++var6)
                 {
@@ -421,7 +424,7 @@ public class BlockBlueFire extends Block
                 }
             }
 
-            if (Block.fire.canBlockCatchFire(par1World, par2, par3, par4 - 1, SOUTH))
+            if (SBlocks.fireBlue.canBlockCatchFire(par1World, par2, par3, par4 - 1, SOUTH))
             {
                 for (var6 = 0; var6 < 2; ++var6)
                 {
@@ -432,7 +435,7 @@ public class BlockBlueFire extends Block
                 }
             }
 
-            if (Block.fire.canBlockCatchFire(par1World, par2, par3, par4 + 1, NORTH))
+            if (SBlocks.fireBlue.canBlockCatchFire(par1World, par2, par3, par4 + 1, NORTH))
             {
                 for (var6 = 0; var6 < 2; ++var6)
                 {
@@ -443,7 +446,7 @@ public class BlockBlueFire extends Block
                 }
             }
 
-            if (Block.fire.canBlockCatchFire(par1World, par2, par3 + 1, par4, DOWN))
+            if (SBlocks.fireBlue.canBlockCatchFire(par1World, par2, par3 + 1, par4, DOWN))
             {
                 for (var6 = 0; var6 < 2; ++var6)
                 {
@@ -507,4 +510,9 @@ public class BlockBlueFire extends Block
         }
         return (newChance > oldChance ? newChance : oldChance);
     }
+    
+	@Override
+	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity ent) {
+		ent.setFire(10);
+	}
 }

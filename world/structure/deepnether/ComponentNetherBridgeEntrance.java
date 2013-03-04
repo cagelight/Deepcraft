@@ -109,7 +109,7 @@ public class ComponentNetherBridgeEntrance extends ComponentNetherBridgePiece
         this.fillWithBlocks(par1World, par3StructureBoundingBox, 5, 5, 5, 7, 5, 7, SBlocks.netherBrickDeep.blockID, SBlocks.netherBrickDeep.blockID, false);
         this.fillWithBlocks(par1World, par3StructureBoundingBox, 6, 1, 6, 6, 4, 6, 0, 0, false);
         this.placeBlockAtCurrentPosition(par1World, SBlocks.netherBrickDeep.blockID, 0, 6, 0, 6, par3StructureBoundingBox);
-        this.placeBlockAtCurrentPosition(par1World, Block.lavaMoving.blockID, 0, 6, 5, 6, par3StructureBoundingBox);
+        this.placeBlockAtCurrentPosition(par1World, SBlocks.lavaBlueMoving.blockID, 0, 6, 5, 6, par3StructureBoundingBox);
         var4 = this.getXWithOffset(6, 6);
         var5 = this.getYWithOffset(5);
         int var6 = this.getZWithOffset(6, 6);
@@ -117,7 +117,7 @@ public class ComponentNetherBridgeEntrance extends ComponentNetherBridgePiece
         if (par3StructureBoundingBox.isVecInside(var4, var5, var6))
         {
             par1World.scheduledUpdatesAreImmediate = true;
-            Block.blocksList[Block.lavaMoving.blockID].updateTick(par1World, var4, var5, var6, par2Random);
+            Block.blocksList[SBlocks.lavaBlueMoving.blockID].updateTick(par1World, var4, var5, var6, par2Random);
             par1World.scheduledUpdatesAreImmediate = false;
         }
 

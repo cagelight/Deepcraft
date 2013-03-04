@@ -204,6 +204,7 @@ public class SBlocks {
 		GameRegistry.registerBlock(stairsNetherBrickDeep, "stairsNetherBrickDeep");
 		GameRegistry.registerBlock(lavaBlueMoving, "lavaBlueMoving");
 		GameRegistry.registerBlock(lavaBlueStill, "lavaBlueStill");
+		GameRegistry.registerBlock(fireBlue, "fireBlue");
 
 		GameRegistry.registerBlock(blockInfurnace, "blockInfurnace");
 		GameRegistry.registerBlock(blockInfurnaceActive, "blockInfurnaceActive");
@@ -273,6 +274,8 @@ public class SBlocks {
 		TextureFXManager.instance().addAnimation(new TexturePortalFXSensMod(portalDeepNether, new int[]{1,1,2,3}));
 		TextureFXManager.instance().addAnimation(new TextureBlueLavaFX());
 		TextureFXManager.instance().addAnimation(new TextureBlueLavaFlowingFX());
+		TextureFXManager.instance().addAnimation(new TextureBlueFlamesFX(0));
+		TextureFXManager.instance().addAnimation(new TextureBlueFlamesFX(1));
 	}
 
 }
