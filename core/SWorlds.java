@@ -6,7 +6,6 @@ import deepcraft.world.deepnether.*;
 import deepcraft.world.endurai.*;
 import deepcraft.world.xirk.*;
 import net.minecraft.block.Block;
-import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.DimensionManager;
 
