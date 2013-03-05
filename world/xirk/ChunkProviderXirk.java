@@ -137,7 +137,7 @@ public class ChunkProviderXirk implements IChunkProvider
 			for (int x = 0; x < 16; x++) {
 				int mapMod = heightmap[x+(z*16)];
 				for (int y = 0; y < 128; y++) {
-					if ((y >= 31+mapMod) && (y <= 95+mapMod)) {
+					if ((y>48+mapMod) && (y<79+mapMod)) {
 						chunkBlocks[cC(x,y,z)] = 0;
 					} else {
 						chunkBlocks[cC(x,y,z)] = (byte)Block.sandStone.blockID;
@@ -556,7 +556,7 @@ public class ChunkProviderXirk implements IChunkProvider
 		if (TerrainGen.populate(par1IChunkProvider, worldObj, rand, par2, par3, var11, DUNGEON)) {
 			for (int i = 0; i < 5; i++) {
 				var12 = var4 + this.rand.nextInt(16) + 8;
-				var13 = this.rand.nextInt(63);
+				var13 = this.rand.nextInt(64);
 				var14 = var5 + this.rand.nextInt(16) + 8;
 				(new XirciumSpikes(false)).generate(this.worldObj, this.rand, var12, var13, var14);
 			}
@@ -565,22 +565,22 @@ public class ChunkProviderXirk implements IChunkProvider
 		if (TerrainGen.populate(par1IChunkProvider, worldObj, rand, par2, par3, var11, DUNGEON)) {
 			for (int i = 0; i < 5; i++) {
 				var12 = var4 + this.rand.nextInt(16) + 8;
-				var13 = this.rand.nextInt(63)+63;
+				var13 = this.rand.nextInt(64)+63;
 				var14 = var5 + this.rand.nextInt(16) + 8;
 				(new XirciumSpikes(true)).generate(this.worldObj, this.rand, var12, var13, var14);
 			}
 		}
 		
-		if (TerrainGen.populate(par1IChunkProvider, worldObj, rand, par2, par3, var11, DUNGEON) && rand.nextInt(128) == 0) {
+		if (TerrainGen.populate(par1IChunkProvider, worldObj, rand, par2, par3, var11, DUNGEON) && rand.nextInt(48) == 0) {
 			var12 = var4 + this.rand.nextInt(16) + 8;
-			var13 = this.rand.nextInt(8) + 28;
+			var13 = this.rand.nextInt(64);
 			var14 = var5 + this.rand.nextInt(16) + 8;
 			(new XirciumSuperSpike(false)).generate(this.worldObj, this.rand, var12, var13, var14);
 		}
 		
-		if (TerrainGen.populate(par1IChunkProvider, worldObj, rand, par2, par3, var11, DUNGEON) && rand.nextInt(128) == 0) {
+		if (TerrainGen.populate(par1IChunkProvider, worldObj, rand, par2, par3, var11, DUNGEON) && rand.nextInt(48) == 0) {
 			var12 = var4 + this.rand.nextInt(16) + 8;
-			var13 = this.rand.nextInt(8) + 92;
+			var13 = this.rand.nextInt(64)+63;
 			var14 = var5 + this.rand.nextInt(16) + 8;
 			(new XirciumSuperSpike(true)).generate(this.worldObj, this.rand, var12, var13, var14);
 		}

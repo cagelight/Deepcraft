@@ -18,7 +18,7 @@ public class XirciumSuperSpike extends WorldGenerator
     public boolean generate(World world, Random rand, int x, int y, int z)
     {
     	boolean blockTest = false;
-    	if (world.getBlockId(x, y, z) == Block.sandStone.blockID && world.isAirBlock(x, y+8, z) && !this.isInverted) {blockTest=true;} else if (world.getBlockId(x, y, z) == Block.sandStone.blockID && world.isAirBlock(x, y-8, z)) {blockTest=true;}
+    	if (world.getBlockId(x, y, z) == Block.sandStone.blockID && world.isAirBlock(x, y+8, z) && world.isAirBlock(x, y+16, z) && !this.isInverted) {blockTest=true;} else if (world.getBlockId(x, y, z) == Block.sandStone.blockID && world.isAirBlock(x, y-8, z) && world.isAirBlock(x, y-16, z)) {blockTest=true;}
     	if (blockTest) {
 			int size = 64;
 			int lengths = 24;
