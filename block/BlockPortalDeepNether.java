@@ -7,6 +7,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import deepcraft.core.CommonProxy;
 import deepcraft.core.Core;
+import deepcraft.core.Reference;
 import deepcraft.core.SBlocks;
 import deepcraft.core.SWorlds;
 import deepcraft.fx.EntityPortalDeepNetherFX;
@@ -69,8 +70,8 @@ public class BlockPortalDeepNether extends BlockPortal{
 			if(par5Entity instanceof EntityPlayerMP) {
 				EntityPlayerMP player = (EntityPlayerMP)par5Entity;
 				if (player.timeUntilPortal == 0) {
-					if (player.dimension != SWorlds.deepNetherID) {
-						player.mcServer.getConfigurationManager().transferPlayerToDimension(player, SWorlds.deepNetherID, new TeleporterSensMod(player.mcServer.worldServerForDimension(SWorlds.deepNetherID), SBlocks.portalDeepNether, SBlocks.blockNetherite));
+					if (player.dimension != Reference.deepNetherID) {
+						player.mcServer.getConfigurationManager().transferPlayerToDimension(player, Reference.deepNetherID, new TeleporterSensMod(player.mcServer.worldServerForDimension(Reference.deepNetherID), SBlocks.portalDeepNether, SBlocks.blockNetherite));
 						player.timeUntilPortal = 60;
 					} else {
 						player.mcServer.getConfigurationManager().transferPlayerToDimension(player, 0, new TeleporterSensMod(player.mcServer.worldServerForDimension(0), SBlocks.portalDeepNether, SBlocks.blockNetherite));

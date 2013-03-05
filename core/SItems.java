@@ -10,25 +10,25 @@ import net.minecraft.item.ItemStack;
 
 public class SItems {
 	
-	public static final Item rodIron = (new ItemSensMod(1000, EnumRarity.common, false)).setIconCoord(6, 4).setItemName("rodIron").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item rodEndurum = (new ItemSensMod(1001, EnumRarity.uncommon, false)).setIconCoord(7, 4).setItemName("rodEndurum").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item rodIron = (new ItemSensMod(Reference.materialIDs+0, EnumRarity.common, false)).setIconCoord(6, 4).setItemName("rodIron").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item rodEndurum = (new ItemSensMod(Reference.materialIDs+1, EnumRarity.uncommon, false)).setIconCoord(7, 4).setItemName("rodEndurum").setCreativeTab(CreativeTabs.tabMaterials);
 
-	public static final Item ingotEndurum = (new ItemSensMod(1199, EnumRarity.uncommon, false)).setIconCoord(6, 1).setItemName("ingotEndurum").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item crystalXircium = (new ItemSensMod(1299, EnumRarity.uncommon, false)).setIconCoord(7, 1).setItemName("crystalXircium").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item crystalNetherite = (new ItemSensMod(1399, EnumRarity.uncommon, false)).setIconCoord(6, 2).setItemName("crystalNetherite").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item ingotValarium = (new ItemSensMod(1499, EnumRarity.rare, true)).setIconCoord(7, 2).setItemName("ingotValarium").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item crystalScinite = (new ItemSensMod(1599, EnumRarity.rare, true)).setIconCoord(6, 3).setItemName("crystalScinite").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item ingotEndurum = (new ItemSensMod(Reference.materialIDs+2, EnumRarity.uncommon, false)).setIconCoord(6, 1).setItemName("ingotEndurum").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item crystalXircium = (new ItemSensMod(Reference.materialIDs+3, EnumRarity.uncommon, false)).setIconCoord(7, 1).setItemName("crystalXircium").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item crystalNetherite = (new ItemSensMod(Reference.materialIDs+4, EnumRarity.uncommon, false)).setIconCoord(6, 2).setItemName("crystalNetherite").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item ingotValarium = (new ItemSensMod(Reference.materialIDs+5, EnumRarity.rare, true)).setIconCoord(7, 2).setItemName("ingotValarium").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item crystalScinite = (new ItemSensMod(Reference.materialIDs+6, EnumRarity.rare, true)).setIconCoord(6, 3).setItemName("crystalScinite").setCreativeTab(CreativeTabs.tabMaterials);
 	
-	public static final Item crystalGodum = (new ItemSensMod(1650, EnumRarity.epic, false)).setIconCoord(7, 0).setItemName("crystalGodum").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item ingotGodum = (new ItemSensMod(1651, EnumRarity.epic, false)).setIconCoord(7, 3).setItemName("ingotGodum").setCreativeTab(CreativeTabs.tabMaterials);
-	public static final Item ingotGodumActive = (new ItemSensMod(1699, Core.endgame, true)).setIconCoord(7, 3).setItemName("ingotGodumActive").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item crystalGodum = (new ItemSensMod(Reference.materialIDs+7, EnumRarity.epic, false)).setIconCoord(7, 0).setItemName("crystalGodum").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item ingotGodum = (new ItemSensMod(Reference.materialIDs+8, EnumRarity.epic, false)).setIconCoord(7, 3).setItemName("ingotGodum").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item ingotGodumActive = (new ItemSensMod(Reference.materialIDs+9, Core.endgame, true)).setIconCoord(7, 3).setItemName("ingotGodumActive").setCreativeTab(CreativeTabs.tabMaterials);
 
-	public static final Item itemValarFuel = (new ItemSensMod(560, EnumRarity.rare, true)).setIconCoord(6, 0).setItemName("itemValarFuel").setCreativeTab(CreativeTabs.tabMaterials);
+	public static final Item itemValarFuel = (new ItemSensMod(Reference.materialIDs+10, EnumRarity.rare, true)).setIconCoord(6, 0).setItemName("itemValarFuel").setCreativeTab(CreativeTabs.tabMaterials);
 	
-	public static final Item artifactEndurai = (new ItemEnduraiArtifact(3900, EnumRarity.rare, false)).setIconCoord(8, 1).setItemName("artifactEndurai").setCreativeTab(CreativeTabs.tabMisc);
-	public static final Item artifactXirk = (new ItemXirkArtifact(3901, EnumRarity.rare, false)).setIconCoord(9, 1).setItemName("artifactXirk").setCreativeTab(CreativeTabs.tabMisc);
-	public static final Item artifactDeepNether = (new ItemDeepNetherArtifact(3902, EnumRarity.rare, false)).setIconCoord(8, 2).setItemName("artifactDeepNether").setCreativeTab(CreativeTabs.tabMisc);
-	public static final Item artifactVala = (new ItemValaArtifact(3903, EnumRarity.epic, true)).setIconCoord(9, 2).setItemName("artifactVala").setCreativeTab(CreativeTabs.tabMisc);
+	public static final Item artifactEndurai = (new ItemEnduraiArtifact(Reference.artifactIDs+0, EnumRarity.rare, false)).setIconCoord(8, 1).setItemName("artifactEndurai").setCreativeTab(CreativeTabs.tabMisc);
+	public static final Item artifactXirk = (new ItemXirkArtifact(Reference.artifactIDs+1, EnumRarity.rare, false)).setIconCoord(9, 1).setItemName("artifactXirk").setCreativeTab(CreativeTabs.tabMisc);
+	public static final Item artifactDeepNether = (new ItemDeepNetherArtifact(Reference.artifactIDs+2, EnumRarity.rare, false)).setIconCoord(8, 2).setItemName("artifactDeepNether").setCreativeTab(CreativeTabs.tabMisc);
+	public static final Item artifactVala = (new ItemValaArtifact(Reference.artifactIDs+3, EnumRarity.epic, true)).setIconCoord(9, 2).setItemName("artifactVala").setCreativeTab(CreativeTabs.tabMisc);
 	
 	public static void SetupLanguage () {
 		

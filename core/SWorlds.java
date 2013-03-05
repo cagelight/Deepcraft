@@ -15,26 +15,18 @@ public class SWorlds {
 	public static BiomeGenBase biomeXirk = new BiomeXirk(91).setBiomeName("Xirk");
 	public static BiomeGenBase biomeDeepNether = new BiomeDeepNether(92).setBiomeName("Deep Nether");
 	
-	public static int enduraiID = 40;
-	public static int xirkID = 41;
-	public static int deepNetherID = 42;
-	public static int valaID = 43;
-	public static int sciID = 44;
-	public static int godusID = 45;
-	public static int limboID = 46;
-	
 	public static void SetupBiomes() {
 		//GameRegistry.addBiome(biomeEndurai);
 	}
 	
 	public static void SetupWorlds() {
 		
-		DimensionManager.registerProviderType(enduraiID, WorldProviderEndurai.class, false);
-		DimensionManager.registerDimension(enduraiID, enduraiID);
-		DimensionManager.registerProviderType(xirkID, WorldProviderXirk.class, false);
-		DimensionManager.registerDimension(xirkID, xirkID);
-		DimensionManager.registerProviderType(deepNetherID, WorldProviderDeepNether.class, false);
-		DimensionManager.registerDimension(deepNetherID, deepNetherID);
+		DimensionManager.registerProviderType(Reference.enduraiID, WorldProviderEndurai.class, false);
+		DimensionManager.registerDimension(Reference.enduraiID, Reference.enduraiID);
+		DimensionManager.registerProviderType(Reference.xirkID, WorldProviderXirk.class, false);
+		DimensionManager.registerDimension(Reference.xirkID, Reference.xirkID);
+		DimensionManager.registerProviderType(Reference.deepNetherID, WorldProviderDeepNether.class, false);
+		DimensionManager.registerDimension(Reference.deepNetherID, Reference.deepNetherID);
 		
 	}
 	

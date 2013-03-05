@@ -8,6 +8,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import deepcraft.core.CommonProxy;
 import deepcraft.core.Core;
+import deepcraft.core.Reference;
 import deepcraft.core.SBlocks;
 import deepcraft.core.SWorlds;
 import deepcraft.fx.EntityPortalEnduraiFX;
@@ -71,8 +72,8 @@ public class BlockPortalEndurai extends BlockPortal{
 			if(par5Entity instanceof EntityPlayerMP) {
 				EntityPlayerMP player = (EntityPlayerMP)par5Entity;
 				if (player.timeUntilPortal == 0) {
-					if (player.dimension != SWorlds.enduraiID) {
-						player.mcServer.getConfigurationManager().transferPlayerToDimension(player, SWorlds.enduraiID, new TeleporterSensMod(player.mcServer.worldServerForDimension(SWorlds.enduraiID), SBlocks.portalEndurai, SBlocks.blockEndurum));
+					if (player.dimension != Reference.enduraiID) {
+						player.mcServer.getConfigurationManager().transferPlayerToDimension(player, Reference.enduraiID, new TeleporterSensMod(player.mcServer.worldServerForDimension(Reference.enduraiID), SBlocks.portalEndurai, SBlocks.blockEndurum));
 						player.timeUntilPortal = 60;
 					} else {
 						player.mcServer.getConfigurationManager().transferPlayerToDimension(player, 0, new TeleporterSensMod(player.mcServer.worldServerForDimension(0), SBlocks.portalEndurai, SBlocks.blockEndurum));

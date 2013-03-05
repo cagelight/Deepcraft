@@ -26,61 +26,57 @@ public class SBlocks {
 		
 	public static final Material artifact = (new Material(MapColor.ironColor));
 	
-	public static final Block oreCoalNether = (new BlockCrystalOreSensMod(2400, 3, Item.coal.itemID, 0, 1, 0)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreCoalNether");
-	public static final Block oreIronNether = (new BlockOreSensMod(2401, 19)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreIronNether");
-	public static final Block oreGoldNether = (new BlockOreSensMod(2402, 35)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreGoldNether");
-	public static final Block oreDiamondNether = (new BlockCrystalOreSensMod(2403, 51, Item.diamond.itemID, 0, 1, 0)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreDiamondNether");
-	public static final Block oreRedstoneNether = (new BlockRedstoneOreNether(2404, 67, false)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreRedstoneNether").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
-	public static final Block oreRedstoneNetherGlowing = (new BlockRedstoneOreNether(2405, 67, true)).setLightValue(0.625F).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreRedstoneNetherGlowing").setRequiresSelfNotify();
-	public static final Block oreLapisNether = (new BlockCrystalOreSensMod(2406, 83, Item.dyePowder.itemID, 4, 4, 5)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreLapisNether");
-	public static final Block oreEmeraldNether = (new BlockCrystalOreSensMod(2407, 99, Item.emerald.itemID, 0, 1, 0)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreEmeraldNether");
-	
-	public final static Block oreEndurum = new BlockOreSensMod(1198, 0).setBlockName("oreEndurum").setHardness(4.0F).setResistance(6.0F);
-	public final static Block oreXircium = new BlockCrystalOreSensMod(1298, 16, SItems.crystalXircium.itemID, 0, 1, 0).setBlockName("oreXircium").setLightValue(0.25f).setHardness(5.0F).setResistance(7.0F);
-	public final static Block oreNetherite = new BlockCrystalOreSensMod(1398, 32, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetherite").setHardness(7.0F).setResistance(10.0F);
-	public final static Block oreValarium = new BlockOreSensMod(1498, 48).setBlockName("oreValarium").setLightValue(0.25f).setHardness(10.0F).setResistance(15.0F);
-	public final static Block oreScinite = new BlockCrystalOreSensMod(1598, 64, SItems.crystalScinite.itemID, 0, 1, 0).setBlockName("oreScinite").setLightValue(1.0f).setHardness(20.0F).setResistance(30.0F);
-	public final static Block oreGodum = new BlockOreSensMod(1698, 80).setBlockName("oreGodum").setHardness(50.0F).setResistance(100.0F);
+	public static final Block oreCoalNether = (new BlockCrystalOreSensMod(Reference.oreIDs+0, 3, Item.coal.itemID, 0, 1, 0)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreCoalNether");
+	public static final Block oreIronNether = (new BlockOreSensMod(Reference.oreIDs+1, 19)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreIronNether");
+	public static final Block oreGoldNether = (new BlockOreSensMod(Reference.oreIDs+2, 35)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreGoldNether");
+	public static final Block oreDiamondNether = (new BlockCrystalOreSensMod(Reference.oreIDs+3, 51, Item.diamond.itemID, 0, 1, 0)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreDiamondNether");
+	public static final Block oreRedstoneNether = (new BlockRedstoneOreNether(Reference.oreIDs+4, 67, false)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreRedstoneNether").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
+	public static final Block oreRedstoneNetherGlowing = (new BlockRedstoneOreNether(Reference.oreIDs+5, 67, true)).setLightValue(0.625F).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreRedstoneNetherGlowing").setRequiresSelfNotify();
+	public static final Block oreLapisNether = (new BlockCrystalOreSensMod(Reference.oreIDs+6, 83, Item.dyePowder.itemID, 4, 4, 5)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreLapisNether");
+	public static final Block oreEmeraldNether = (new BlockCrystalOreSensMod(Reference.oreIDs+7, 99, Item.emerald.itemID, 0, 1, 0)).setHardness(3.0F).setResistance(5.0F).setStepSound(Block.soundStoneFootstep).setBlockName("oreEmeraldNether");	
+	public final static Block oreEndurum = new BlockOreSensMod(Reference.oreIDs+8, 0).setBlockName("oreEndurum").setHardness(4.0F).setResistance(6.0F);
+	public final static Block oreXircium = new BlockCrystalOreSensMod(Reference.oreIDs+9, 16, SItems.crystalXircium.itemID, 0, 1, 0).setBlockName("oreXircium").setLightValue(0.25f).setHardness(5.0F).setResistance(7.0F);
+	public final static Block oreNetherite = new BlockCrystalOreSensMod(Reference.oreIDs+10, 32, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetherite").setHardness(7.0F).setResistance(10.0F);
+	public final static Block oreValarium = new BlockOreSensMod(Reference.oreIDs+11, 48).setBlockName("oreValarium").setLightValue(0.25f).setHardness(10.0F).setResistance(15.0F);
+	public final static Block oreScinite = new BlockCrystalOreSensMod(Reference.oreIDs+12, 64, SItems.crystalScinite.itemID, 0, 1, 0).setBlockName("oreScinite").setLightValue(1.0f).setHardness(20.0F).setResistance(30.0F);
+	public final static Block oreGodum = new BlockOreSensMod(Reference.oreIDs+13, 80).setBlockName("oreGodum").setHardness(50.0F).setResistance(100.0F);
+	public final static Block oreEndurumNether = new BlockOreSensMod(Reference.oreIDs+14, 2).setBlockName("oreEndurumNether").setHardness(4.0F).setResistance(6.0F);
+	public final static Block oreXirciumNether = new BlockCrystalOreSensMod(Reference.oreIDs+15, 18, SItems.crystalXircium.itemID, 0, 1, 0).setBlockName("oreXirciumNether").setLightValue(0.25f).setHardness(5.0F).setResistance(7.0F);
+	public final static Block oreNetheriteNether = new BlockCrystalOreSensMod(Reference.oreIDs+16, 34, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetheriteNether").setHardness(7.0F).setResistance(10.0F);
+	public final static Block oreValariumNether = new BlockOreSensMod(Reference.oreIDs+17, 50).setBlockName("oreValariumNether").setLightValue(0.25f).setHardness(10.0F).setResistance(15.0F);
+	public final static Block oreSciniteNether = new BlockCrystalOreSensMod(Reference.oreIDs+18, 66, SItems.crystalScinite.itemID, 0, 1, 0).setBlockName("oreSciniteNether").setLightValue(1.0f).setHardness(20.0F).setResistance(30.0F);
+	public final static Block oreGodumNether = new BlockOreSensMod(Reference.oreIDs+19, 82).setBlockName("oreGodumNether").setHardness(50.0F).setResistance(100.0F);	
+	public final static Block oreXirciumXirk = new BlockOreXirciumSandstone(Reference.oreIDs+20).setBlockName("oreXirciumXirk").setHardness(5.0F).setResistance(7.0F);
+	public final static Block oreNetheriteDeepNether = new BlockCrystalOreSensMod(Reference.oreIDs+21, 98, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetheriteDeepNether").setHardness(7.0F).setResistance(10.0F);
 
-	public final static Block oreEndurumNether = new BlockOreSensMod(1196, 2).setBlockName("oreEndurumNether").setHardness(4.0F).setResistance(6.0F);
-	public final static Block oreXirciumNether = new BlockCrystalOreSensMod(1296, 18, SItems.crystalXircium.itemID, 0, 1, 0).setBlockName("oreXirciumNether").setLightValue(0.25f).setHardness(5.0F).setResistance(7.0F);
-	public final static Block oreNetheriteNether = new BlockCrystalOreSensMod(1396, 34, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetheriteNether").setHardness(7.0F).setResistance(10.0F);
-	public final static Block oreValariumNether = new BlockOreSensMod(1496, 50).setBlockName("oreValariumNether").setLightValue(0.25f).setHardness(10.0F).setResistance(15.0F);
-	public final static Block oreSciniteNether = new BlockCrystalOreSensMod(1596, 66, SItems.crystalScinite.itemID, 0, 1, 0).setBlockName("oreSciniteNether").setLightValue(1.0f).setHardness(20.0F).setResistance(30.0F);
-	public final static Block oreGodumNether = new BlockOreSensMod(1696, 82).setBlockName("oreGodumNether").setHardness(50.0F).setResistance(100.0F);
+	public final static Block blockEndurum = new BlockSensMod(Reference.matBlockIDs+0, 1, Material.iron).setBlockName("blockEndurum").setHardness(8.0F).setResistance(12.0F);
+	public final static Block blockXircium = new BlockSensMod(Reference.matBlockIDs+1, 17, Material.iron).setBlockName("blockXircium").setHardness(10.0F).setResistance(14.0F).setLightValue(0.25F);
+	public final static Block blockNetherite = new BlockSensMod(Reference.matBlockIDs+2, 33, Material.iron).setBlockName("blockNetherite").setHardness(14.0F).setResistance(20.0F);
+	public final static Block blockValarium = new BlockSensMod(Reference.matBlockIDs+3, 49, Material.iron).setBlockName("blockValarium").setHardness(20.0F).setResistance(30.0F).setLightValue(0.25F);
+	public final static Block blockScinite = new BlockSensMod(Reference.matBlockIDs+4, 65, Material.iron).setBlockName("blockScinite").setHardness(40.0F).setResistance(60.0F).setLightValue(1.0F);
+	public final static Block blockGodum = new BlockSensMod(Reference.matBlockIDs+5, 81,  Material.iron).setBlockName("blockGodum").setHardness(100.0F).setResistance(200.0F);
+	public final static Block blockGodumActive = new BlockSensMod(Reference.matBlockIDs+6, 9,  Material.iron).setBlockName("blockGodumActive").setHardness(10000.0F).setResistance(20000.0F);
 	
-	public final static Block oreXirciumXirk = new BlockOreXirciumSandstone(1290).setBlockName("oreXirciumXirk").setHardness(5.0F).setResistance(7.0F);
-	public final static Block oreNetheriteDeepNether = new BlockCrystalOreSensMod(1370, 98, SItems.crystalNetherite.itemID, 0, 1, 0).setBlockName("oreNetheriteDeepNether").setHardness(7.0F).setResistance(10.0F);
-
-	public final static Block blockEndurum = new BlockSensMod(1197, 1, Material.iron).setBlockName("blockEndurum").setHardness(8.0F).setResistance(12.0F);
-	public final static Block blockXircium = new BlockSensMod(1297, 17, Material.iron).setBlockName("blockXircium").setHardness(10.0F).setResistance(14.0F).setLightValue(0.25F);
-	public final static Block blockNetherite = new BlockSensMod(1397, 33, Material.iron).setBlockName("blockNetherite").setHardness(14.0F).setResistance(20.0F);
-	public final static Block blockValarium = new BlockSensMod(1497, 49, Material.iron).setBlockName("blockValarium").setHardness(20.0F).setResistance(30.0F).setLightValue(0.25F);
-	public final static Block blockScinite = new BlockSensMod(1597, 65, Material.iron).setBlockName("blockScinite").setHardness(40.0F).setResistance(60.0F).setLightValue(1.0F);
-	public final static Block blockGodum = new BlockSensMod(1697, 81,  Material.iron).setBlockName("blockGodum").setHardness(100.0F).setResistance(200.0F);
+	public final static Block netherrackDeep = new BlockDeepNetherrack(Reference.miscBlockIDs+0, 103).setHardness(1.2F).setStepSound(Block.soundStoneFootstep).setBlockName("netherrackDeep");
+	public final static Block slowSandDeep = (new BlockTormentedSoulSand(Reference.miscBlockIDs+1, 104)).setHardness(0.75F).setStepSound(Block.soundSandFootstep).setBlockName("slowSandDeep");
+    public static final Block netherBrickDeep = (new BlockSensMod(Reference.miscBlockIDs+2, 224, Material.rock)).setHardness(2.0F).setResistance(10.0F).setStepSound(Block.soundStoneFootstep).setBlockName("netherBrickDeep").setCreativeTab(CreativeTabs.tabBlock);
+    public static final Block netherFenceDeep = (new BlockFenceSensMod(Reference.miscBlockIDs+3, 224, Material.rock)).setHardness(2.0F).setResistance(10.0F).setStepSound(Block.soundStoneFootstep).setBlockName("netherFenceDeep");
+    public static final Block stairsNetherBrickDeep = (new BlockStairsSensMod(Reference.miscBlockIDs+4, netherBrickDeep, 0)).setBlockName("stairsNetherBrickDeep").setRequiresSelfNotify();
+    public static final Block lavaBlueMoving = (new BlockBlueLavaFlowing(Reference.miscBlockIDs+5, Material.lava)).setHardness(0.0F).setLightValue(1.0F).setLightOpacity(255).setBlockName("lavaBlueMoving").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
+    public static final Block lavaBlueStill = (new BlockBlueLavaStationary(Reference.miscBlockIDs+6, Material.lava)).setHardness(100.0F).setLightValue(1.0F).setLightOpacity(255).setBlockName("lavaBlueStill").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
+    public static final BlockBlueFire fireBlue = (BlockBlueFire)(new BlockBlueFire(Reference.miscBlockIDs+7, 31)).setHardness(0.0F).setLightValue(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("fireBlue");
 	
-	public final static Block netherrackDeep = new BlockDeepNetherrack(1380, 103).setHardness(1.2F).setStepSound(Block.soundStoneFootstep).setBlockName("netherrackDeep");
-	public final static Block slowSandDeep = (new BlockTormentedSoulSand(1381, 104)).setHardness(0.75F).setStepSound(Block.soundSandFootstep).setBlockName("slowSandDeep");
-    public static final Block netherBrickDeep = (new BlockSensMod(1382, 224, Material.rock)).setHardness(2.0F).setResistance(10.0F).setStepSound(Block.soundStoneFootstep).setBlockName("netherBrickDeep").setCreativeTab(CreativeTabs.tabBlock);
-    public static final Block netherFenceDeep = (new BlockFenceSensMod(1383, 224, Material.rock)).setHardness(2.0F).setResistance(10.0F).setStepSound(Block.soundStoneFootstep).setBlockName("netherFenceDeep");
-    public static final Block stairsNetherBrickDeep = (new BlockStairsSensMod(1384, netherBrickDeep, 0)).setBlockName("stairsNetherBrickDeep").setRequiresSelfNotify();
-    public static final Block lavaBlueMoving = (new BlockBlueLavaFlowing(1385, Material.lava)).setHardness(0.0F).setLightValue(1.0F).setLightOpacity(255).setBlockName("lavaBlueMoving").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
-    public static final Block lavaBlueStill = (new BlockBlueLavaStationary(1386, Material.lava)).setHardness(100.0F).setLightValue(1.0F).setLightOpacity(255).setBlockName("lavaBlueStill").setRequiresSelfNotify().setCreativeTab(CreativeTabs.tabBlock);
-    public static final BlockBlueFire fireBlue = (BlockBlueFire)(new BlockBlueFire(1387, 31)).setHardness(0.0F).setLightValue(1.0F).setStepSound(Block.soundWoodFootstep).setBlockName("fireBlue");
+	public final static Block blockInfurnace = new BlockInfurnace(Reference.infurnaceIDs+0, false).setBlockName("blockInfurnace").setCreativeTab(CreativeTabs.tabDecorations);
+	public final static Block blockInfurnaceActive = new BlockInfurnace(Reference.infurnaceIDs+1, true).setBlockName("blockInfurnaceActive");
+		
+	public final static BlockPortalEndurai portalEndurai = (BlockPortalEndurai) new BlockPortalEndurai(Reference.portalBlockIDs+0, 10).setHardness(-1.0F).setLightValue(0.75F).setBlockName("portalEndurai");
+	public final static BlockPortalXirk portalXirk = (BlockPortalXirk) new BlockPortalXirk(Reference.portalBlockIDs+1, 11).setHardness(-1.0F).setLightValue(0.75F).setBlockName("portalXirk");
+	public final static BlockPortalDeepNether portalDeepNether = (BlockPortalDeepNether) new BlockPortalDeepNether(Reference.portalBlockIDs+2, 12).setHardness(-1.0F).setLightValue(0.75F).setBlockName("portalDeepNether");
 	
-	public final static Block blockInfurnace = new BlockInfurnace(505, false).setBlockName("blockInfurnace").setCreativeTab(CreativeTabs.tabDecorations);
-	public final static Block blockInfurnaceActive = new BlockInfurnace(506, true).setBlockName("blockInfurnaceActive");
-	
-	public final static Block blockGodumActive = new BlockSensMod(1797, 9,  Material.iron).setBlockName("blockGodumActive").setHardness(10000.0F).setResistance(20000.0F);
-	
-	public final static BlockPortalEndurai portalEndurai = (BlockPortalEndurai) new BlockPortalEndurai(4000, 10).setHardness(-1.0F).setLightValue(0.75F).setBlockName("portalEndurai");
-	public final static BlockPortalXirk portalXirk = (BlockPortalXirk) new BlockPortalXirk(4001, 11).setHardness(-1.0F).setLightValue(0.75F).setBlockName("portalXirk");
-	public final static BlockPortalDeepNether portalDeepNether = (BlockPortalDeepNether) new BlockPortalDeepNether(4002, 12).setHardness(-1.0F).setLightValue(0.75F).setBlockName("portalDeepNether");
-	
-	public final static BlockArtifact artifactEnduraiBlock = (BlockArtifact) new BlockArtifact(2450, 24, artifact, SItems.artifactEndurai.itemID).setBlockName("artifactEnduraiBlock");
-	public final static BlockArtifact artifactXirkBlock = (BlockArtifact) new BlockArtifact(2451, 25, artifact, SItems.artifactXirk.itemID).setBlockName("artifactXirkBlock");
-	public final static BlockArtifact artifactDeepNetherBlock = (BlockArtifact) new BlockArtifact(2452, 40, artifact, SItems.artifactDeepNether.itemID).setBlockName("artifactDeepNetherBlock");
-	public final static BlockArtifact artifactValaBlock = (BlockArtifact) new BlockArtifact(2453, 41, artifact, SItems.artifactVala.itemID).setBlockName("artifactValaBlock");
+	public final static BlockArtifact artifactEnduraiBlock = (BlockArtifact) new BlockArtifact(Reference.artifactBlockIDs+0, 24, artifact, SItems.artifactEndurai.itemID).setBlockName("artifactEnduraiBlock");
+	public final static BlockArtifact artifactXirkBlock = (BlockArtifact) new BlockArtifact(Reference.artifactBlockIDs+1, 25, artifact, SItems.artifactXirk.itemID).setBlockName("artifactXirkBlock");
+	public final static BlockArtifact artifactDeepNetherBlock = (BlockArtifact) new BlockArtifact(Reference.artifactBlockIDs+2, 40, artifact, SItems.artifactDeepNether.itemID).setBlockName("artifactDeepNetherBlock");
+	public final static BlockArtifact artifactValaBlock = (BlockArtifact) new BlockArtifact(Reference.artifactBlockIDs+3, 41, artifact, SItems.artifactVala.itemID).setBlockName("artifactValaBlock");
 	
 	public static void SetupLanguage () {
 		

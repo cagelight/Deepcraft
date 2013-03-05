@@ -18,58 +18,58 @@ import net.minecraftforge.common.MinecraftForge;
 
 public class STools {
 	
-	public static final Item swordEndurum = (new ItemSwordSensMod(1100, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 4).setItemName("swordEndurum");
-	public static final Item swordXircium = (new ItemSwordSensMod(1200, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 4).setItemName("swordXircium");
-	public static final Item swordNetherite = (new ItemSwordSensMod(1300, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 4).setItemName("swordNetherite");
-	public static final Item swordValarium = (new ItemSwordSensMod(1400, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 4).setItemName("swordValarium");
-	public static final Item swordScinite = (new ItemSwordSensMod(1500, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 4).setItemName("swordScinite");
-	public static final Item swordGodum = (new ItemSwordSensMod(1600, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 4).setItemName("swordGodum");
-	public static final Item swordGodumActive = (new ItemSwordSensMod(1700, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 4).setItemName("swordGodumActive");
+	public static final Item swordEndurum = (new ItemSwordSensMod(Reference.toolIDs+0, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 4).setItemName("swordEndurum");
+	public static final Item swordXircium = (new ItemSwordSensMod(Reference.toolIDs+1, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 4).setItemName("swordXircium");
+	public static final Item swordNetherite = (new ItemSwordSensMod(Reference.toolIDs+2, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 4).setItemName("swordNetherite");
+	public static final Item swordValarium = (new ItemSwordSensMod(Reference.toolIDs+3, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 4).setItemName("swordValarium");
+	public static final Item swordScinite = (new ItemSwordSensMod(Reference.toolIDs+4, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 4).setItemName("swordScinite");
+	public static final Item swordGodum = (new ItemSwordSensMod(Reference.toolIDs+5, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 4).setItemName("swordGodum");
+	public static final Item swordGodumActive = (new ItemSwordSensMod(Reference.toolIDs+6, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 4).setItemName("swordGodumActive");
 
-	public static final Item spadeEndurum = (new ItemSpadeSensMod(1101, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 5).setItemName("spadeEndurum");
-	public static final Item spadeXircium = (new ItemSpadeSensMod(1201, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 5).setItemName("spadeXircium");
-	public static final Item spadeNetherite = (new ItemSpadeSensMod(1301, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 5).setItemName("spadeNetherite");
-	public static final Item spadeValarium = (new ItemSpadeSensMod(1401, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 5).setItemName("spadeValarium");
-	public static final Item spadeScinite = (new ItemSpadeSensMod(1501, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 5).setItemName("spadeScinite");
-	public static final Item spadeGodum = (new ItemSpadeSensMod(1601, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 5).setItemName("spadeGodum");
-	public static final Item spadeGodumActive = (new ItemSpadeSensMod(1701, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 5).setItemName("spadeGodumActive");
+	public static final Item spadeEndurum = (new ItemSpadeSensMod(Reference.toolIDs+7, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 5).setItemName("spadeEndurum");
+	public static final Item spadeXircium = (new ItemSpadeSensMod(Reference.toolIDs+8, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 5).setItemName("spadeXircium");
+	public static final Item spadeNetherite = (new ItemSpadeSensMod(Reference.toolIDs+9, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 5).setItemName("spadeNetherite");
+	public static final Item spadeValarium = (new ItemSpadeSensMod(Reference.toolIDs+10, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 5).setItemName("spadeValarium");
+	public static final Item spadeScinite = (new ItemSpadeSensMod(Reference.toolIDs+11, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 5).setItemName("spadeScinite");
+	public static final Item spadeGodum = (new ItemSpadeSensMod(Reference.toolIDs+12, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 5).setItemName("spadeGodum");
+	public static final Item spadeGodumActive = (new ItemSpadeSensMod(Reference.toolIDs+13, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 5).setItemName("spadeGodumActive");
 
-	public static final Item pickaxeEndurum = (new ItemPickaxeSensMod(1102, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 6).setItemName("pickaxeEndurum");
-	public static final Item pickaxeXircium = (new ItemPickaxeSensMod(1202, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 6).setItemName("pickaxeXircium");
-	public static final Item pickaxeNetherite = (new ItemPickaxeSensMod(1302, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 6).setItemName("pickaxeNetherite");
-	public static final Item pickaxeValarium = (new ItemPickaxeSensMod(1402, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 6).setItemName("pickaxeValarium");
-	public static final Item pickaxeScinite = (new ItemPickaxeSensMod(1502, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 6).setItemName("pickaxeScinite");
-	public static final Item pickaxeGodum = (new ItemPickaxeSensMod(1602, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 6).setItemName("pickaxeGodum");
-	public static final Item pickaxeGodumActive = (new ItemPickaxeSensMod(1702, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 6).setItemName("pickaxeGodumActive");
+	public static final Item pickaxeEndurum = (new ItemPickaxeSensMod(Reference.toolIDs+14, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 6).setItemName("pickaxeEndurum");
+	public static final Item pickaxeXircium = (new ItemPickaxeSensMod(Reference.toolIDs+15, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 6).setItemName("pickaxeXircium");
+	public static final Item pickaxeNetherite = (new ItemPickaxeSensMod(Reference.toolIDs+16, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 6).setItemName("pickaxeNetherite");
+	public static final Item pickaxeValarium = (new ItemPickaxeSensMod(Reference.toolIDs+17, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 6).setItemName("pickaxeValarium");
+	public static final Item pickaxeScinite = (new ItemPickaxeSensMod(Reference.toolIDs+18, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 6).setItemName("pickaxeScinite");
+	public static final Item pickaxeGodum = (new ItemPickaxeSensMod(Reference.toolIDs+19, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 6).setItemName("pickaxeGodum");
+	public static final Item pickaxeGodumActive = (new ItemPickaxeSensMod(Reference.toolIDs+20, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 6).setItemName("pickaxeGodumActive");
 
-	public static final Item axeEndurum = (new ItemAxeSensMod(1103, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 7).setItemName("axeEndurum");
-	public static final Item axeXircium = (new ItemAxeSensMod(1203, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 7).setItemName("axeXircium");
-	public static final Item axeNetherite = (new ItemAxeSensMod(1303, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 7).setItemName("axeNetherite");
-	public static final Item axeValarium = (new ItemAxeSensMod(1403, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 7).setItemName("axeValarium");
-	public static final Item axeScinite = (new ItemAxeSensMod(1503, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 7).setItemName("axeScinite");
-	public static final Item axeGodum = (new ItemAxeSensMod(1603, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 7).setItemName("axeGodum");
-	public static final Item axeGodumActive = (new ItemAxeSensMod(1703, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 7).setItemName("axeGodumActive");
+	public static final Item axeEndurum = (new ItemAxeSensMod(Reference.toolIDs+21, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 7).setItemName("axeEndurum");
+	public static final Item axeXircium = (new ItemAxeSensMod(Reference.toolIDs+22, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 7).setItemName("axeXircium");
+	public static final Item axeNetherite = (new ItemAxeSensMod(Reference.toolIDs+23, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 7).setItemName("axeNetherite");
+	public static final Item axeValarium = (new ItemAxeSensMod(Reference.toolIDs+24, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 7).setItemName("axeValarium");
+	public static final Item axeScinite = (new ItemAxeSensMod(Reference.toolIDs+25, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 7).setItemName("axeScinite");
+	public static final Item axeGodum = (new ItemAxeSensMod(Reference.toolIDs+26, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 7).setItemName("axeGodum");
+	public static final Item axeGodumActive = (new ItemAxeSensMod(Reference.toolIDs+27, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 7).setItemName("axeGodumActive");
 
-	public static final Item hoeEndurum = (new ItemHoeSensMod(1104, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 8).setItemName("hoeEndurum");
-	public static final Item hoeXircium = (new ItemHoeSensMod(1204, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 8).setItemName("hoeXircium");
-	public static final Item hoeNetherite = (new ItemHoeSensMod(1304, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 8).setItemName("hoeNetherite");
-	public static final Item hoeValarium = (new ItemHoeSensMod(1404, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 8).setItemName("hoeValarium");
-	public static final Item hoeScinite = (new ItemHoeSensMod(1504, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 8).setItemName("hoeScinite");
-	public static final Item hoeGodum = (new ItemHoeSensMod(1604, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 8).setItemName("hoeGodum");
-	public static final Item hoeGodumActive = (new ItemHoeSensMod(1704, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 8).setItemName("hoeGodumActive");
+	public static final Item hoeEndurum = (new ItemHoeSensMod(Reference.toolIDs+28, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 8).setItemName("hoeEndurum");
+	public static final Item hoeXircium = (new ItemHoeSensMod(Reference.toolIDs+29, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 8).setItemName("hoeXircium");
+	public static final Item hoeNetherite = (new ItemHoeSensMod(Reference.toolIDs+30, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 8).setItemName("hoeNetherite");
+	public static final Item hoeValarium = (new ItemHoeSensMod(Reference.toolIDs+31, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 8).setItemName("hoeValarium");
+	public static final Item hoeScinite = (new ItemHoeSensMod(Reference.toolIDs+32, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 8).setItemName("hoeScinite");
+	public static final Item hoeGodum = (new ItemHoeSensMod(Reference.toolIDs+33, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 8).setItemName("hoeGodum");
+	public static final Item hoeGodumActive = (new ItemHoeSensMod(Reference.toolIDs+34, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 8).setItemName("hoeGodumActive");
 
-	public static final Item spaxelWood = (new ItemSpaxelSensMod(900, EnumToolMaterial.WOOD, EnumRarity.common, false)).setIconCoord(0, 15).setItemName("spaxelWood");
-	public static final Item spaxelStone = (new ItemSpaxelSensMod(901, EnumToolMaterial.STONE, EnumRarity.common, false)).setIconCoord(1, 15).setItemName("spaxelStone");
-	public static final Item spaxelIron = (new ItemSpaxelSensMod(902, EnumToolMaterial.IRON, EnumRarity.common, false)).setIconCoord(2, 15).setItemName("spaxelIron");
-	public static final Item spaxelGold = (new ItemSpaxelSensMod(903, EnumToolMaterial.GOLD, EnumRarity.common, false)).setIconCoord(4, 15).setItemName("spaxelGold");
-	public static final Item spaxelDiamond = (new ItemSpaxelSensMod(904, EnumToolMaterial.EMERALD, EnumRarity.common, false)).setIconCoord(3, 15).setItemName("spaxelDiamond");
-	public static final Item spaxelEndurum = (new ItemSpaxelSensMod(1105, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 9).setItemName("spaxelEndurum");
-	public static final Item spaxelXircium = (new ItemSpaxelSensMod(1205, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 9).setItemName("spaxelXircium");
-	public static final Item spaxelNetherite = (new ItemSpaxelSensMod(1305, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 9).setItemName("spaxeleNetherite");
-	public static final Item spaxelValarium = (new ItemSpaxelSensMod(1405, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 9).setItemName("spaxelValarium");
-	public static final Item spaxelScinite = (new ItemSpaxelSensMod(1505, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 9).setItemName("spaxelScinite");
-	public static final Item spaxelGodum = (new ItemSpaxelSensMod(1605, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 9).setItemName("spaxelGodum");
-	public static final Item spaxelGodumActive = (new ItemSpaxelSensMod(1705, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 9).setItemName("spaxelGodumActive");
+	public static final Item spaxelWood = (new ItemSpaxelSensMod(Reference.toolIDs+35, EnumToolMaterial.WOOD, EnumRarity.common, false)).setIconCoord(0, 15).setItemName("spaxelWood");
+	public static final Item spaxelStone = (new ItemSpaxelSensMod(Reference.toolIDs+36, EnumToolMaterial.STONE, EnumRarity.common, false)).setIconCoord(1, 15).setItemName("spaxelStone");
+	public static final Item spaxelIron = (new ItemSpaxelSensMod(Reference.toolIDs+37, EnumToolMaterial.IRON, EnumRarity.common, false)).setIconCoord(2, 15).setItemName("spaxelIron");
+	public static final Item spaxelGold = (new ItemSpaxelSensMod(Reference.toolIDs+38, EnumToolMaterial.GOLD, EnumRarity.common, false)).setIconCoord(4, 15).setItemName("spaxelGold");
+	public static final Item spaxelDiamond = (new ItemSpaxelSensMod(Reference.toolIDs+39, EnumToolMaterial.EMERALD, EnumRarity.common, false)).setIconCoord(3, 15).setItemName("spaxelDiamond");
+	public static final Item spaxelEndurum = (new ItemSpaxelSensMod(Reference.toolIDs+40, Core.ENDURUM, EnumRarity.uncommon, false)).setIconCoord(0, 9).setItemName("spaxelEndurum");
+	public static final Item spaxelXircium = (new ItemSpaxelSensMod(Reference.toolIDs+41, Core.XIRCIUM, EnumRarity.uncommon, false)).setIconCoord(1, 9).setItemName("spaxelXircium");
+	public static final Item spaxelNetherite = (new ItemSpaxelSensMod(Reference.toolIDs+42, Core.NETHERITE, EnumRarity.uncommon, false)).setIconCoord(2, 9).setItemName("spaxeleNetherite");
+	public static final Item spaxelValarium = (new ItemSpaxelSensMod(Reference.toolIDs+43, Core.VALARIUM, EnumRarity.rare, true)).setIconCoord(3, 9).setItemName("spaxelValarium");
+	public static final Item spaxelScinite = (new ItemSpaxelSensMod(Reference.toolIDs+44, Core.SCINITE, EnumRarity.rare, true)).setIconCoord(4, 9).setItemName("spaxelScinite");
+	public static final Item spaxelGodum = (new ItemSpaxelSensMod(Reference.toolIDs+45, Core.GODUM, EnumRarity.epic, false)).setIconCoord(5, 9).setItemName("spaxelGodum");
+	public static final Item spaxelGodumActive = (new ItemSpaxelSensMod(Reference.toolIDs+46, Core.GODUMACTIVE, Core.endgame, true)).setIconCoord(5, 9).setItemName("spaxelGodumActive");
 	
 	public static void SetupLanguage () {
 		
