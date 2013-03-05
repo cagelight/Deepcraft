@@ -5,6 +5,7 @@ import java.util.Random;
 
 import deepcraft.core.SBlocks;
 import deepcraft.world.feature.DeepNetherReplacer;
+import deepcraft.world.feature.NetheriteSpikes;
 import deepcraft.world.structure.deepnether.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSand;
@@ -499,6 +500,19 @@ public class ChunkProviderDeepNether implements IChunkProvider
         MinecraftForge.EVENT_BUS.post(new DecorateBiomeEvent.Pre(worldObj, hellRNG, var4, var5));
         
         new DeepNetherReplacer().generate(this.worldObj, this.hellRNG, var4, 0, var5);
+        
+        for (int i=0;i<8;i++) {
+            var7 = var4 + this.hellRNG.nextInt(16) + 8;
+            var8 = this.hellRNG.nextInt(90)+6;
+            var9 = var5 + this.hellRNG.nextInt(16) + 8;
+            (new NetheriteSpikes(false)).generate(this.worldObj, this.hellRNG, var7, var8, var9);
+        }
+        for (int i=0;i<8;i++) {
+            var7 = var4 + this.hellRNG.nextInt(16) + 8;
+            var8 = this.hellRNG.nextInt(90)+37;
+            var9 = var5 + this.hellRNG.nextInt(16) + 8;
+            (new NetheriteSpikes(true)).generate(this.worldObj, this.hellRNG, var7, var8, var9);
+        }
 
         MinecraftForge.EVENT_BUS.post(new DecorateBiomeEvent.Post(worldObj, hellRNG, var4, var5));
         MinecraftForge.EVENT_BUS.post(new PopulateChunkEvent.Post(par1IChunkProvider, worldObj, hellRNG, par2, par3, false));

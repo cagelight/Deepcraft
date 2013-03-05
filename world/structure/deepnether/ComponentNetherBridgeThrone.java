@@ -64,7 +64,7 @@ public class ComponentNetherBridgeThrone extends ComponentNetherBridgePiece
             if (par3StructureBoundingBox.isVecInside(var5, var4, var6))
             {
                 this.hasSpawner = true;
-                if (par2Random.nextInt(48) == 0) {
+                if (par2Random.nextInt(24) == 0) {
                 	par1World.setBlockWithNotify(var5, var4, var6, SBlocks.artifactValaBlock.blockID);
                 } else {
                 	par1World.setBlockWithNotify(var5, var4, var6, SBlocks.artifactDeepNetherBlock.blockID);

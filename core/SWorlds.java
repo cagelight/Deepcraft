@@ -69,7 +69,7 @@ public class SWorlds {
 		WGSM.SetupXirkOre(SBlocks.oreXirciumXirk.blockID, 3, 64, 128, 56);
 		
 		WGSM.SetupDeepNetherOre(SBlocks.oreNetheriteDeepNether.blockID, 128, 8, 16, 127);
-		WGSM.SetupDeepNetherOre(SBlocks.lavaBlueMoving.blockID, 4, 16, 64, 127);
+		WGSM.SetupDeepNetherOre(SBlocks.lavaBlueMoving.blockID, 4, 8, 32, 127);
 		
 		GameRegistry.registerWorldGenerator(WGSM);
 	}
