@@ -1,23 +1,24 @@
 package deepcraft.core;
 
 public class Reference {	
-	/* Items and Blocks */
-	public static final int baseID = 1700;
-	//Items
-	public static final int armorIDs = baseID;
-	public static final int toolIDs = armorIDs + 32;
-	public static final int materialIDs = toolIDs + 64;
-	public static final int artifactIDs = materialIDs + 24;
-	public static final int miscItemIDs = artifactIDs + 8;
+	/* ID Reference Base */
+	public static final int blockBaseID = 1740;
+	public static final int itemBaseID = 7477;
+	public static final int dimensionBaseID = 70;
 	//Blocks
-	public static final int oreIDs = miscItemIDs + 48;
+	public static final int oreIDs = blockBaseID;
 	public static final int matBlockIDs = oreIDs + 32;
 	public static final int infurnaceIDs = matBlockIDs + 8;
 	public static final int artifactBlockIDs = infurnaceIDs + 2;
 	public static final int portalBlockIDs = artifactBlockIDs + 8;
 	public static final int miscBlockIDs = portalBlockIDs + 8;	
-	/* Dimensions */
-	public static final int dimensionBaseID = 70;
+	//Items
+	public static final int armorIDs = itemBaseID;
+	public static final int toolIDs = armorIDs + 32;
+	public static final int materialIDs = toolIDs + 64;
+	public static final int artifactIDs = materialIDs + 24;
+	public static final int miscItemIDs = artifactIDs + 8;
+	//Dimensions	
 	public static final int enduraiID = dimensionBaseID+0;
 	public static final int xirkID = dimensionBaseID+1;
 	public static final int deepNetherID = dimensionBaseID+2;
