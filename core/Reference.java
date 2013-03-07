@@ -10,7 +10,8 @@ public class Reference {
 	public static final int matBlockIDs = oreIDs + 32;
 	public static final int infurnaceIDs = matBlockIDs + 8;
 	public static final int artifactBlockIDs = infurnaceIDs + 2;
-	public static final int portalBlockIDs = artifactBlockIDs + 8;
+	public static final int treasureBlockIDs = artifactBlockIDs + 8;
+	public static final int portalBlockIDs = treasureBlockIDs + 8;
 	public static final int miscBlockIDs = portalBlockIDs + 8;	
 	//Items
 	public static final int armorIDs = itemBaseID;
